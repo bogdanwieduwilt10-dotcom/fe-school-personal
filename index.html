@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Form</title>
+</head>
+
+<body>
+    <main style="max-width: 1000px; margin-left: auto; margin-right: auto; margin-top: 100px;">
+        <section>
+            <h1 style="text-align: center;">Homework Form</h1>
+            <form>
+                <fieldset>
+                    <legend>Enter your credentials</legend>
+                    <p>
+                        <label>
+                            <span>First Name:</span>
+                            <input type="text" placeholder="Enter First Name">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Last Name:</span>
+                            <input type="text" placeholder="Enter Last Name">
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Email:</span>
+                            <input type="email" id="email" placeholder="Enter your Email" required>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <span>Phone Number:</span>
+                            <input type="tel" id="tel" placeholder="Enter your Phone Number" required>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset style="margin-top: 20px;">
+                    <legend>Details about your course</legend>
+                    <p>
+                        <span>Choose your Course:</span>
+                        <select name="course" id="course">
+                            <option value="none" disabled selected> Choose Course</option>
+                            <option value="Front-End-Start">Front-End-Start</option>
+                            <option value="Python Start">Python Start</option>
+                            <option value="JavaScript Start">JavaScript Start</option>
+                        </select>
+                    </p>
+                    <p>Do you complete your homework:</p>
+                    <p>
+                        <label>
+                            <input type="radio" name="Answer" id="Yes">
+                            <span>Yes, I do.</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="radio" name="Answer" id="No">
+                            <span>No, I do not.</span>
+                        </label>
+                    </p>
+                    <p>Additional Information:</p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="options" id="option1">
+                            <span>I will continue my studies.</span>
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input type="checkbox" name="options" id="option2">
+                            <span>I additionally study English.</span>
+                        </label>
+                    </p>
+                </fieldset>
+                <p>
+                    <button type="submit">Send Form</button>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
