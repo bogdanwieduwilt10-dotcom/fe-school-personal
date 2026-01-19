@@ -5,12 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework</title>
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <main>
-        <h1>Text here</h1>
+        <section>
+            <h1> Login | <span class="text-primary">Register</span></h1>
+            <p>Enter your email and password to register.</p>
+            <form class="login-form">
+                <p>
+                    <input class="w-full" type="text" name="user" placeholder="Username">
+                </p>
+                <p>
+                    <input class="w-full" type="email" name="email" placeholder="Enter your email adress">
+                </p>
+                <p>
+                    <input class="w-full" type="password" name="password" placeholder="Password" required>
+                </p>
+                <p>
+                    <input class="w-full" type="password" placeholder="Confirm Password" required>
+                </p>
+                <p>
+                    <button class="bg-primary mt-40 w-full">Register</button>
+                </p>
+                <p class="mt-40">Or register with</p>
+                <p>
+                    <button class="w-full social-button"><img src="./gallery/google.png" alt="icon" width="25">Continue
+                        with Google</button>
+                </p>
+                <p>
+                    <button class="w-full social-button"><img src="./gallery/facebook.png" alt="icon"
+                            width="15">Continue
+                        with Facebook</button>
+                </p>
+
+            </form>
+
+
+        </section>
     </main>
 </body>
 
