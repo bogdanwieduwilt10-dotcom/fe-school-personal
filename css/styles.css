@@ -16,7 +16,7 @@
     width: 25px;
     height: 20px;
 }
-.custom-r input[type="radio"] {
+.custom-r input[type="radio"], .custom-r input[type="checkbox"] {
     opacity: 0;
     
 }
@@ -45,7 +45,7 @@ legend{
     height: 20px;
 }
 
-.custom-r input[type="radio"]:checked + .radio2{
+.custom-r input[type="checkbox"]:checked + .radio2{
     background: url(../images/check.png)
     no-repeat center/contain;
 }
@@ -69,10 +69,10 @@ legend{
     top: 1px;
     background-color: white;
 }
-.custom-r input[type="radio"]:checked + .radio3::before{
+.custom-r input[type="checkbox"]:checked + .radio3::before{
     left: 14px;
 }
-.custom-r input[type="radio"]:checked + .radio3{
+.custom-r input[type="checkbox"]:checked + .radio3{
     background-color: lightgreen;
 }
 .radio4{
@@ -82,7 +82,7 @@ legend{
     background: url(../images/toggler.png)
     no-repeat center/contain;
 }
-.custom-r input[type="radio"]:checked + .radio4{
+.custom-r input[type="checkbox"]:checked + .radio4{
     border-radius: 50%;
     background-color: lightgreen;
 }
