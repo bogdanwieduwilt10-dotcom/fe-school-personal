@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Домашнее задание №5</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <h1 class="main-title">Форма с использованием псевдоэлементов</h1>
+            <form class="costom-form">
+                <h2 class="secondary-title">Какая-то форма, <br>которая что-то делает:</h2>
+                <fieldset class="fieldset">
+                    <legend>Выберите один из вариантов</legend>
+                    <p>
+                        <label class="label radio-group">
+                            <input type="radio" name="variant" value="1">
+                            <span class="pseudo"></span>
+                            Первый
+                        </label>
+                    </p>
+                    <p>
+                        <label class="label radio-group">
+                            <input type="radio" name="variant" value="2">
+                            <span class="pseudo"></span>
+                            Второй
+                        </label>
+                    </p>
+                    <p>
+                        <label class="label radio-group">
+                            <input type="radio" name="variant" value="3">
+                            <span class="pseudo"></span>
+                            Третий
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Выберите дополнительные варианты</legend>
+                    <p>
+                        <label class="label checkbox-group type-1">
+                            <input type="checkbox" name="additional" value="some">
+                            <span class="pseudo"></span>
+                            Какой-то вариант ответа
+                        </label>
+                    </p>
+                    <p>
+                        <label class="label checkbox-group type-2">
+                            <input type="checkbox" name="additional" value="other">
+                            <span class="pseudo"></span>
+                            Другой вариант ответа
+                        </label>
+                    </p>
+                    <p>
+                        <label class="label checkbox-group type-3">
+                            <input type="checkbox" name="additional" value="more">
+                            <span class="pseudo"></span>
+                            Ещё вариант ответа
+                        </label>
+                    </p>
+                </fieldset>
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
