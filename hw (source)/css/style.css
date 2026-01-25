@@ -1,0 +1,223 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #909090;
+}
+main {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.main-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #303030;
+  text-align: center;
+}
+
+.secondary-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #606060;
+  text-align: center;
+}
+
+.costom-form {
+  padding: 1.5rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  position: relative;
+  /* background-color: rgb(240, 240, 240); */
+  /* box-shadow: 0 0 15px rgba(240, 240, 240, 0.5); */
+}
+
+.costom-form::before {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 2rem;
+  position: absolute;
+  left: 5%;
+  top: calc(100% - 1rem);
+  border-radius: 1rem;
+  z-index: -1;
+  /* background-color: rgb(230, 230, 230); */
+  /* box-shadow: 0 0 15px rgba(230, 230, 230, 0.5); */
+}
+
+.costom-form::after {
+  content: '';
+  /* : ; */
+  width: 80%;
+  height: 2rem;
+  position: absolute;
+  left: 10%;
+  top: calc(100%);
+  border-radius: 1rem;
+  z-index: -2;
+  /* background-color: rgb(220, 220, 220); */
+  /* box-shadow: 0 0 15px rgba(220, 220, 220, 0.5); */
+}
+
+.costom-form .fieldset {
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.costom-form .label {
+  cursor: pointer;
+}
+
+.radio-group input[type='radio'] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.radio-group .pseudo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* background: url(); */
+  /* opacity: 0; */
+  transition: all 0.2s linear;
+}
+
+.radio-group input[type='radio']:checked + .pseudo {
+  /* : 1; */
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+}
+.checkbox-group .pseudo {
+  margin-right: 0.5rem;
+}
+
+.checkbox-group input[type='checkbox'] {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-group.type-1 .pseudo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  /* background: url(); */
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.checkbox-group.type-1 input[type='checkbox']:checked + .pseudo {
+  opacity: 1;
+}
+
+.checkbox-group.type-2 .pseudo {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 12px;
+  transition: all 0.2s linear;
+  border-radius: 6px;
+  /* background-color: red; */
+}
+.checkbox-group.type-2 .pseudo::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 1px;
+  left: 1px;
+  transition: all 0.2s linear;
+  /* border-radius: 50%; */
+  background-color: white;
+}
+
+.checkbox-group.type-2 input[type='checkbox']:checked + .pseudo {
+  /* background-color: ; */
+}
+
+.checkbox-group.type-2 input[type='checkbox']:checked + .pseudo::before {
+  left: 8px;
+}
+
+.checkbox-group.type-3 .pseudo {
+  display: inline-block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  transition: all 0.2s linear;
+  border-radius: 50%;
+  /* background: url() no ce/co; */
+}
+
+.checkbox-group.type-3 input[type='checkbox']:checked + .pseudo {
+  /* background-color: green; */
+  /* box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); */
+}
+
+.checkbox-group.type-3 .pseudo::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 150px;
+  /* background-image: linear-gradient(
+    90deg,
+    rgb(61, 255, 61) 0%,
+    rgb(13, 155, 0) 50%,
+    rgb(61, 255, 61) 100%
+  ); */
+  background-size: 200%;
+  background-position: 0 0;
+  transition: all 0.2s linear;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+}

@@ -12,41 +12,64 @@
 </head>
 
 <body>
-    <main>
-        <section>
-            <h1> Login | <span class="text-primary">Register</span></h1>
-            <p>Enter your email and password to register.</p>
-            <form class="login-form">
-                <p>
-                    <input class="w-full" type="text" name="user" placeholder="Username">
-                </p>
-                <p>
-                    <input class="w-full" type="email" name="email" placeholder="Enter your email adress">
-                </p>
-                <p>
-                    <input class="w-full" type="password" name="password" placeholder="Password" required>
-                </p>
-                <p>
-                    <input class="w-full" type="password" placeholder="Confirm Password" required>
-                </p>
-                <p>
-                    <button class="bg-primary mt-40 w-full">Register</button>
-                </p>
-                <p class="mt-40">Or register with</p>
-                <p>
-                    <button class="w-full social-button"><img src="./gallery/google.png" alt="icon" width="25">Continue
-                        with Google</button>
-                </p>
-                <p>
-                    <button class="w-full social-button"><img src="./gallery/facebook.png" alt="icon"
-                            width="15">Continue
-                        with Facebook</button>
-                </p>
-
-            </form>
+    <main class="main1">
 
 
-        </section>
+
+        <h1 style="text-align: center; ">Some form, that does something</h1>
+
+        <form class="some-form">
+            <fieldset class="fieldset1">
+                <legend>Choose one of the options</legend>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option" value="option1">
+                        <span class="radio"></span>
+                        <span>Option 1</span>
+                    </label>
+                </p>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option" value="option2">
+                        <span class="radio"></span>
+                        <span>Option 2</span>
+                    </label>
+                </p>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option" value="option3">
+                        <span class="radio"></span>
+                        <span>Option 3</span>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset class="fieldset1">
+                <legend>Choose additional options</legend>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option2" value="option4">
+                        <span class="radio2"></span>
+                        <span> Another Option </span>
+                    </label>
+                </p>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option2" value="option5">
+                        <span class="radio3"></span>
+                        <span>Other Option</span>
+                    </label>
+                </p>
+                <p>
+                    <label class="custom-r">
+                        <input type="radio" name="option2" value="option6">
+                        <span class="radio4"></span>
+                        <span>Other Option</span>
+                    </label>
+                </p>
+            </fieldset>
+            <button type="submit">Send</button>
+        </form>
+
     </main>
 </body>
 
