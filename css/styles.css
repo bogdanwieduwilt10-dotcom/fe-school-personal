@@ -1,3 +1,63 @@
-main{
-    margin-top: 0px;
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+ul{
+    list-style: none;
+}
+
+.main-menu {
+  display: flex;
+  margin: 0 20px;
+  background: #333;
+}
+
+.main-menu > li {
+  position: relative;
+  padding: 15px 25px;
+  color: white;
+}
+
+.main-menu > li:hover {
+  background: #0094ff;
+}
+
+.child {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #0094ff;
+  padding: 0;
+  margin: 0;
+  min-width: 200px;
+}
+
+.parent:hover > .child {
+  display: block;
+}
+
+.child li {
+  position: relative;
+  padding: 15px 20px;
+  color: white;
+}
+
+.child li:hover {
+  background: #0094ff;
+}
+
+.child .child {
+  top: 0;
+  left: 100%;
+  background: #149bf0;
+}
+.parent::after {
+  content: "";
+  position: absolute;
+  right: 11px;
+  
+}
+.parent:hover::after {
+  content: "+";
 }
