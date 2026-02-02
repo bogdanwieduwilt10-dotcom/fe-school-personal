@@ -1,3 +1,192 @@
-main{
-    margin-top: 0px;
+:root {
+   --bg-primary: #34547a;
+   --bg-secondary:#EEEFF1;
+   --text-secondary: #727272;
+   --container-size: 1920px;
+   --basic-space: 1rem;
+}
+
+html {
+    font-family: "Roboto" , sans-serif;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: normal;
+    font-style: 16px;
+}
+
+li a:hover {
+    color: #34547a;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container {
+    font-size: 16px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: calc(var(--container-size) + var(--basic-space) * 2);
+    padding-left: var(--basic-space);
+    padding-right: var(--basic-space);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.main-screen {
+    background-color: var(--bg-secondary);
+    height: 700px;
+    padding-top: 78px;
+    padding-left: 405px;
+}
+
+
+
+.home-link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 164%;
+    color: var(--bg-primary);
+}
+
+.home-page,
+.menu-item {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.menu-item + .menu-item {
+    margin-left: 40px;
+}
+
+.text-btn {
+    margin-top: 180px;
+    max-width: 540px;
+    padding-bottom: 194px;
+}
+
+.d-l {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 164%;
+}
+
+.des1 {
+    margin-top: 40px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.write-btn {
+    margin-top: 60px;
+    background-color: var(--bg-primary);
+    padding: 24px 70px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.about {
+    margin-left: 690px;
+    margin-top: 100px;
+    max-width: 540px;
+    text-align: center;
+}
+
+.abt-me {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.des2 {
+    padding-top: 40px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+
+.projects-s {
+    color: white;
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 405px;
+    background-color: var(--bg-primary);
+    max-width: 1920px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.p-img {
+    height: 50px;
+    width: 50px;
+} 
+
+.project-block {
+    align-items: center;
+    padding-right: 49px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.forty {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.work {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.des3 {
+    padding-top: 40px;
+    font-weight: 400;
+    color: var(--text-secondary);
+}
+
+.vid {
+    margin-top: 60px;
+    margin-left: 405px;
+    max-width: 1110px;
+    max-height: 600px;
+}
+
+.end {
+    background-color: var(--bg-primary);
+    height: 164px;
+    margin-top: 100px;
+    padding-left: 405px;
+}
+
+.rights {
+    padding-right: 405px;
+    padding-top: 60px;
+    max-width: 193px;
+    color: white;
+}
+
+.John {
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.r-reserved {
+    font-size: 13px;
+    margin-top: 20px;
 }
