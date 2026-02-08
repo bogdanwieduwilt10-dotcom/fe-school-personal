@@ -2,7 +2,7 @@
    --bg-primary: #34547a;
    --bg-secondary:#EEEFF1;
    --text-secondary: #727272;
-   --container-size: 1920px;
+   --container-size: 1110px;
    --basic-space: 1rem;
 }
 
@@ -46,9 +46,8 @@ img {
 
 .main-screen {
     background-color: var(--bg-secondary);
-    height: 700px;
     padding-top: 78px;
-    padding-left: 405px;
+    padding-bottom: 194px;
 }
 
 
@@ -73,7 +72,6 @@ img {
 .text-btn {
     margin-top: 180px;
     max-width: 540px;
-    padding-bottom: 194px;
 }
 
 .d-l {
@@ -97,11 +95,24 @@ img {
     font-weight: 400;
 }
 
+.about-section {
+    padding-bottom: 100px;
+}
+
 .about {
-    margin-left: 690px;
-    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 540px;
     text-align: center;
+    padding-top: 100px;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center{
+    align-items: center;
 }
 
 .abt-me {
@@ -110,24 +121,26 @@ img {
 }
 
 .des2 {
-    padding-top: 40px;
+    margin-top: 40px;
     font-weight: 400;
     color: var(--text-secondary);
 }
 
 
-.projects-s {
+.projects-section {
     color: white;
-    margin-top: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
-    padding-left: 405px;
-    background-color: var(--bg-primary);
-    max-width: 1920px;
-    height: 200px;
+    background-color: var(--bg-primary); 
     display: flex;
     align-items: center;
     
+}
+
+.projects-section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .p-img {
@@ -137,7 +150,6 @@ img {
 
 .project-block {
     align-items: center;
-    padding-right: 49px;
 }
 
 .pl-20 {
@@ -162,22 +174,19 @@ img {
 
 .vid {
     margin-top: 60px;
-    margin-left: 405px;
-    max-width: 1110px;
-    max-height: 600px;
 }
 
-.end {
+.vid img {
+    width: 100%;
+}
+
+.footer {
     background-color: var(--bg-primary);
-    height: 164px;
-    margin-top: 100px;
-    padding-left: 405px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .rights {
-    padding-right: 405px;
-    padding-top: 60px;
-    max-width: 193px;
     color: white;
 }
 
@@ -189,4 +198,8 @@ img {
 .r-reserved {
     font-size: 13px;
     margin-top: 20px;
+}
+
+.how-work {
+    padding-bottom: 100px;
 }
