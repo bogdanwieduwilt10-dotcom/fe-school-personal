@@ -57,13 +57,10 @@ li a {
     font-size: 16px;
 }
 
-.menu-item + .menu-item {
-    margin-left: 30px;
-}
-
 .menu {
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 img {
@@ -110,14 +107,13 @@ img {
 }
 
 .sale {
-    position: relative;
     width: 100%;
-    display: inline-block;
+    background-image: url('../Group.png');
+    padding-block: 190px;
 }
 
 .sale-bg-image {
-    width: 100%;
-    display: block;
+    width: 100%; 
 }
 
 .super-chair {
@@ -136,24 +132,17 @@ img {
 }
 
 .more-btn {
-    width: 170px;
+    min-width: 170px;
     color: #FFFFFF;
     border-radius: 40px;
     background-color: var(--bg-primary);
     border: 2px solid;
     border-color: #FFFFFF;
     font-size: 14px;
-    padding-left: 27px;
-    padding-right: 26px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 12px;
-    padding-bottom: 13px;
-}
-
-
-.overlay-content {
-    position: absolute;
-    top: 40%;
-    left: 10%;
+    padding-bottom: 12px;
 }
 
 .special-offers {
@@ -163,7 +152,6 @@ img {
 }
 
 .s-offer {
-  margin-top: 80px;
   font-weight: 700;
   font-size: 24px;
   color: #000000;
@@ -178,36 +166,30 @@ img {
 
 
 .chair-card {
+    width: 100%;
     background: #FFFFFF;
     max-width: 255px;
     text-align: center;
-    border-radius: 10px;
+    padding: 25px 30px;
 }
 
 .chair-card img {
     display: block;
     max-width: 125px;
-    margin-top: 25px;
     margin-bottom: 20px;
-    margin-right: 65px;
-    margin-left: 65px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 
 .title {
     font-weight: 400;
     font-size: 14px;
-    margin-bottom: 10px;
-    max-width: 195px;
-    margin-left: 30px;
 }
 
 .price {
     margin-top: 20px;
     font-weight: 500;
     font-size: 21px;
-    max-width: 80px;
-    margin-left: 87px;
     margin-bottom: 20px;
 }
 
@@ -219,7 +201,6 @@ img {
   font-size: 14px;
   padding: 9px 39px;
   border-radius: 30px;
-  margin-bottom: 25px;
 }
 
 .double-card-container {
@@ -233,16 +214,14 @@ img {
     background-color: var(--bg-primary);
     max-width: 540px;
     display: flex;
+    padding: 35px 40px 35px 40px;
 }
 
 .mail-text {
     color: #FFFFFF;
-    margin-bottom: 35px;
 }
 
 .bonus {
-    margin-top: 35px;
-    margin-left: 40px;
     margin-bottom: 25px;
     font-weight: 500;
     font-size: 18px;
@@ -250,7 +229,6 @@ img {
 } 
 
 .giveaway {
-    margin-left: 40px;
     font-weight: 400;
     font-size: 14px;
     max-width: 231px;
@@ -260,7 +238,6 @@ img {
     max-width: 225px;
     border: none;
     margin-top: 25px;
-    margin-left: 40px;
     color: #C4C4C4;
     border-radius: 30px;
     padding: 9px 25px;
@@ -272,13 +249,12 @@ img {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 65px;
-    margin-right: 45px;
 }
 
 .enter {
+    margin-bottom: 25px;
     margin-top: 35px;
     margin-left: 40px;
-    margin-bottom: 25px;
     font-weight: 500;
     font-size: 18px;
     max-width: 250px;
@@ -297,8 +273,9 @@ img {
     margin-left: 40px;
     font-weight: 400;
     font-size: 14px;
+    border: 2px solid;
     border-color: #FFFFFF;
-    background-color: var(--bg-primary);
+    background-color:transparent;
     border-radius: 30px;
     border-width: 3px;
     padding: 9px 29px;
@@ -357,8 +334,8 @@ img {
 
 .menu-column {
     box-sizing: border-box;
-    width: 255px;
-    margin-right: 50px;
+    margin-right: 30px;
+    flex-grow: 1;
 }
 
 .menu-column + .menu-column {
@@ -387,7 +364,7 @@ img {
 
 .icons {
     display: flex;
-    gap: 40px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -396,29 +373,31 @@ img {
     align-items: center;
 }
 
+.cell-and-btn a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 40px;
+}
+
 .cell {
     font-weight: 400;
     font-size: 16px;
     color: #000000;
-    margin-right: 40px;
 }
 
 .call-btn {
-    max-width: 174px;
+    min-width: 170px;
     background-color: white;
     font-weight: 400;
     font-size: 14px;
     border-radius: 40px;
+    border: 2px solid;
     border-color: var(--bg-primary);
-    padding-left: 27px;
-    padding-right: 26px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 12px;
-    padding-bottom: 13px;
-}
-
-.icons img {
-    width: 20px;
-    height: 20px;
+    padding-bottom: 12px;
 }
 
 .rights-footer {
@@ -442,4 +421,14 @@ img {
 .flex-justify {
     display: flex;
     justify-content: space-between;
+}
+
+.icons-circle {
+    border: 2px solid var(--bg-primary);
+    width: 45px; 
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
