@@ -9,3 +9,13 @@ main{
 .items-center{
     align-items: center;
 }
+
+.movies {
+    margin-left: 32px;
+}
+
+.movies ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
