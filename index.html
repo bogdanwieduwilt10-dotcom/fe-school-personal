@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW</title>
+    <title>HW16</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -12,9 +12,46 @@
 
 <body>
     <main>
+        <main>
+            <section class="main-section">
+                <div class="container">
+
+
+
+                    <div id="userInfo" class="user-info py-rem" style="display:none;">
+                        <h3>
+                            Привіт <span id="userName"></span>!
+                            Ти вже авторизований в системі.
+                        </h3>
+                        <br>
+                        <button id="logout">Вийти</button>
+                    </div>
+
+
+                    <form id="mainForm" class="py-rem" style="display:none;">
+                        <fieldset class="py-rem">
+                            <legend>Інформація про користувача</legend>
+
+                            <label class="py-rem">
+                                <span>Ім'я:</span>
+                                <input id="nameField" name="name" type="text" placeholder="Введіть ваше ім'я" required>
+                            </label>
+
+                        </fieldset>
+                        <br>
+                        <button type="submit">Зберегти</button>
+                    </form>
+
+                </div>
+            </section>
+        </main>
+
+        <footer></footer>
+
+        <script src="./js/script.js"></script>
     </main>
 </body>
 
-<script src="./js/script.js"></script>
+
 
 </html>
